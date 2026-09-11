@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6c63ff, #42a5f5);
+}
+
+.card {
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 16px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+
+    color: white;
+    font-size: 15px;
+
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5148df;
+}
+
+.link-button {
+    width: 100%;
+    margin-top: 12px;
+
+    color: #5148df;
+    background: none;
+}
+
+.link-button:hover {
+    color: #3027b9;
+    background: none;
+}
+
+#user-email {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #eeeeff;
+    border-radius: 8px;
+}
+
+#message {
+    min-height: 24px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.success {
+    color: #16833d;
+}
+
+.error {
+    color: #c62828;
+}
+
+.hidden {
+    display: none;
+}
