@@ -11,4 +11,4 @@ document.addEventListener("mousemove", (event) => {
     textbox3.style.left = x + 'px';
     textbox3.style.top = y + 'px';
 });
-$(document)
+$(document).ready()
