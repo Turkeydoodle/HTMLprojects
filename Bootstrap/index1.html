@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags for Bootstrap and JQuery -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/ui-lightness/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- JS Imports -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.js"></script>
+    <!-- Rename the JQueryUI 'tooltip' and 'button' classes to 'uitooltip' and 'uibutton' so that they won't conflict with Bootstrap's 'tooltip' and 'button' classes. -->
+    <script>
+        $.widget.bridge('uitooltip', $.ui.tooltip);
+        $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <h1>Joke Carousel</h1>
+    <br>
+</body>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="flex-container">
+                <h3>Why did the chicken cross the road?</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/SNice.svg" width="300" height="300">
+                <div id="textbox">To get to the other side!</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="flex-container">
+                <h3>Knock Knock!</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/SNice.svg" width="300" height="300">
+                <div id="textbox2">Who's there?</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="flex-container">
+                <h3>What do you call a cow with no legs?</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/SNice.svg" width="300" height="300"
+                    title="Ground Beef!">
+                <div id="textbox3">Groud beef!</div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+</html>
